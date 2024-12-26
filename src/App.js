@@ -102,6 +102,7 @@ function App() {
       }, 1000);
     } else if (kalanSure === 0 && oyunBasladi) {
       setOyunBasladi(false);
+      setShowSonuc(true);
     }
     return () => clearInterval(timer);
   }, [kalanSure, oyunBasladi]);
